@@ -30,10 +30,9 @@ const itemVariants = {
   
   const items = [
     "Homepage",
-    "Services",
-    "Portfolio",
+    "AboutMe",
+    "Projects",
     "Contact",
-    "About",
   ]
 
   return (

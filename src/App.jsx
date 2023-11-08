@@ -5,7 +5,7 @@ import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
 import Parallax from './components/parallax/Parallax';
 import Portfolio from './components/portfolio/Portfolio';
-import Services from './components/services/Services';
+import AboutMe from './components/aboutme/AboutMe';
 
 const App = () => {
   return (
@@ -14,15 +14,15 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
-        <Parallax type="services" />
+      <section id="AboutMe">
+        <Parallax type="aboutMe" />
       </section>
       <section>
-        <Services />
+        <AboutMe />
       </section>
 
-      <section>
-        <Parallax type="portfolio" />
+      <section id="Projects">
+        <Parallax type="Projects" />
       </section>
       <Portfolio/>
       <section id="Contact">

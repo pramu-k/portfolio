@@ -17,7 +17,7 @@ const Parallax = ({type}) => {
   return (
     <div className="parallax" ref={reference}>
       <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "What We Do" : "What We Did?"}
+        {type === "aboutMe" ? "About Me" : "My Projects"}
       </motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div className="planets" style={{ y: yBg }}></motion.div>
