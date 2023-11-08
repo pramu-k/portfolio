@@ -18,19 +18,17 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-    
-      <Sidebar/>
+      <Sidebar />
       <div className="wrapper">
-        <motion.span variants={variants} initial="initial" animate="final">Pramuditha Kaluthanthri</motion.span>
+        <motion.span variants={variants} initial="initial" animate="final">
+          pramu-k
+        </motion.span>
         <div className="social">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/pramuditha-kaluthanthri-5b54351a2/">
             <i className="fa-brands fa-linkedin"></i>
           </a>
-          <a href="#">
+          <a href="https://github.com/pramu-k">
             <i className="fa-brands fa-github"></i>
-          </a>
-          <a href="#">
-            <i className="fa-brands fa-youtube"></i>
           </a>
         </div>
       </div>

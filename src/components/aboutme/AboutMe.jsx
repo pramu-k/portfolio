@@ -54,7 +54,7 @@ const AboutMe = () => {
         </motion.div>
         <motion.div className="description" variants={variantsLeft}>
           <p>
-            "I'm a passionate full stack developer with a love for turning
+            "Welcome to my portfolio. I'm a passionate full stack developer with a love for turning
             innovative ideas into functional, beautiful, and user-friendly web
             applications.I'm not just a coder; I'm a problem solver. I thrive to
             create solutions that not only meet, but exceed expectations."
@@ -75,9 +75,10 @@ const AboutMe = () => {
           <h1>Languages</h1>
           <ul>
             <li>Java</li>
-            <li>Java</li>
-            <li>Java</li>
-            <li>Java</li>
+            <li>Java Script</li>
+            <li>Type Script</li>
+            <li>HTML</li>
+            <li>CSS/SASS</li>
           </ul>
         </motion.div>
         <motion.div
@@ -109,81 +110,4 @@ const AboutMe = () => {
   );
 }
 export default AboutMe
-
-{
-  /* <motion.div
-      className="aboutMe"
-      ref={reference}
-      variants={variants}
-      initial="initial"
-      //animate={"animate"}
-      //whileInView="animate"
-      animate={isInView?"animate":"initial"}
-    >
-      <motion.div className="textContainer" variants={variants}>
-        <p>
-          I focus on helping your brand grow
-          <br />
-          and move forward
-        </p>
-        <hr />
-      </motion.div>
-      <motion.div className="titleContainer" variants={variants}>
-        <div className="title">
-          <img src="./assets/people.webp" alt="people" />
-          <h1>
-            <b>Unique </b>Ideas
-          </h1>
-        </div>
-        <div className="title">
-          <h1>
-            <b>For Your </b>Business
-          </h1>
-          <button>WHAT WE DO?</button>
-        </div>
-      </motion.div>
-      <motion.div className="listContainer" variants={variants}>
-        <div className="box">
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            accusantium voluptas tempora illo vitae numquam animi possimus quas
-            ipsa praesentium voluptatum, officia a atque laboriosam ipsum quia
-            qui optio quisquam!
-          </p>
-          <button>Go</button>
-        </div>
-        <div className="box">
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            accusantium voluptas tempora illo vitae numquam animi possimus quas
-            ipsa praesentium voluptatum, officia a atque laboriosam ipsum quia
-            qui optio quisquam!
-          </p>
-          <button>Go</button>
-        </div>
-        <div className="box">
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            accusantium voluptas tempora illo vitae numquam animi possimus quas
-            ipsa praesentium voluptatum, officia a atque laboriosam ipsum quia
-            qui optio quisquam!
-          </p>
-          <button>Go</button>
-        </div>
-        <div className="box">
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            accusantium voluptas tempora illo vitae numquam animi possimus quas
-            ipsa praesentium voluptatum, officia a atque laboriosam ipsum quia
-            qui optio quisquam!
-          </p>
-          <button>Go</button>
-        </div>
-      </motion.div>
-    </motion.div> */
-}
 

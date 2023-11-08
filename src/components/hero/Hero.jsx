@@ -1,5 +1,5 @@
 import "./hero.scss";
-import profilePic from "../../../public/assets/Profile.jpg";
+import profilePic from "../../../public/Profile.jpg";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="image-container">
-        <img src="/assets/Profile.jpg" alt="profile picture" />
+        <img src="/Profile.jpg" alt="profile picture" />
       </div>
       <div className="wrapper">
         <motion.div

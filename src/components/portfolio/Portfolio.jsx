@@ -5,27 +5,33 @@ import { motion, useScroll, useSpring, useTransform,useInView } from "framer-mot
 const items = [
   {
     id: 1,
-    title: "React Project",
+    title: "My Portfolio",
     img: "https://cdn.pixabay.com/photo/2023/09/20/04/04/sea-urchin-8263832_1280.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusantium voluptas tempora illo vitae numquam animi possimus qua ipsa praesentium voluptatum, officia a atque laboriosam ipsum quiaqui optio quisquam!",
+    desc: "Where else you can showcase your own talent other than your own portfolio? I developed this portfolio website using React. Sass was used for styling of this website and Framer Motion library was used for animations.",
   },
   {
     id: 2,
-    title: "Java Project",
+    title: "E-commerce Application",
     img: "https://cdn.pixabay.com/photo/2023/10/12/12/54/woman-8310743_1280.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusantium voluptas tempora illo vitae numquam animi possimus qua ipsa praesentium voluptatum, officia a atque laboriosam ipsum quiaqui optio quisquam!",
+    desc: "This is a front-end web project developed using Angular where the user is able to sign up/log in and make purchases. Sales CRUD operations are managed through publicly available testing APIs and user authentication is done using Firebase Authentication.",
   },
   {
     id: 3,
-    title: "Angular Project",
+    title: "Supermarket POS",
     img: "https://cdn.pixabay.com/photo/2023/09/20/04/04/sea-urchin-8263832_1280.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusantium voluptas tempora illo vitae numquam animi possimus qua ipsa praesentium voluptatum, officia a atque laboriosam ipsum quiaqui optio quisquam!",
+    desc: "In this project, I developed a standalone application to manage sales and inventory of a supermarket using Java, MySQL, and JavaFX.",
   },
   {
     id: 4,
-    title: "Spring Project",
+    title: "Quiz API",
     img: "https://cdn.pixabay.com/photo/2023/09/20/04/04/sea-urchin-8263832_1280.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusantium voluptas tempora illo vitae numquam animi possimus qua ipsa praesentium voluptatum, officia a atque laboriosam ipsum quiaqui optio quisquam!",
+    desc: "In this project, I developed a web API to generate quizzes of MCQs using Spring Boot and PostgreSQL. The user is able to receive quizzes based on question categories and number of questions.",
+  },
+  {
+    id: 5,
+    title: "Student Management System",
+    img: "https://cdn.pixabay.com/photo/2023/09/20/04/04/sea-urchin-8263832_1280.jpg",
+    desc: "This is a standalone JavaFX application where the user is able to perform CRUD operations of students, teachers and courses of an Educational Institute.",
   },
 ];
 
@@ -67,7 +73,7 @@ const Single = ({ item }) => {
           >
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <button>View on Github</button>
           </motion.div>
         </div>
       </div>

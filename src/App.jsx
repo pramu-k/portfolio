@@ -1,4 +1,4 @@
-import Test2 from './Test2';
+
 import './app.scss';
 import Contact from './components/contact/Contact';
 import Hero from './components/hero/Hero';
