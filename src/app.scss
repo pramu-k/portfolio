@@ -1,0 +1,44 @@
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:#0B0C1C;
+    color:lightgray;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h2{
+    font-family: roboto;
+}
+h3{
+    font-family: ubuntu;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+
+.course{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+    }
+}
