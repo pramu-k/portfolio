@@ -31,17 +31,11 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>PRAMUDITHA KALUTHANTHRI</motion.h2>
           <motion.h3 variants={textVariants}>Full Stack Developer</motion.h3>
           <motion.div className="button-container" variants={textVariants}>
-            <motion.button
-              className="btn btn-outline-light"
-              variants={textVariants}
-            >
-              See the Latest Work
+            <motion.button className="seeMyWorkButton" variants={textVariants}>
+              <a href="#Projects">See the Latest Work</a>
             </motion.button>
-            <motion.button
-              className="btn btn-outline-light"
-              variants={textVariants}
-            >
-              Contact Me
+            <motion.button className="contactBtn" variants={textVariants}>
+              <a href="#Contact">Contact Me</a>
             </motion.button>
           </motion.div>
         </motion.div>
