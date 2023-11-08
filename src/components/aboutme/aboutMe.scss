@@ -45,11 +45,12 @@
   }
   .techWrapper {
     padding-top: 20px;
+    padding-bottom: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    justify-content: space-between;
 
     :hover{
             background-color: yellow;

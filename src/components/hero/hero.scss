@@ -34,12 +34,13 @@
             justify-content: center;
 
             h2{
-                font-size: 30px;
+                font-size: 40px;
+                font-weight: bold;
                 color: purple;
                 letter-spacing: 5px;
             }
             h3{
-                font-size: 25px;
+                font-size: 35px;
                 letter-spacing: 3px;
             }
             .button-container{
@@ -54,6 +55,12 @@
                     background-color: transparent;
                     cursor: pointer;
                     font-weight: 300;
+
+                    
+                }
+                button:hover{
+                    background-color: antiquewhite;
+                    color: black;
                 }
             }
         }
