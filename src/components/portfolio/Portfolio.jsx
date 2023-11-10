@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./portfolio.scss";
-import { motion, useScroll, useSpring, useTransform,useInView } from "framer-motion";
+import { motion, useScroll, useSpring, useInView } from "framer-motion";
 
 const items = [
   {
@@ -61,7 +61,6 @@ const Single = ({ item }) => {
 
   const isInView = useInView(reference);
 
-  // const y = useTransform(scrollYProgress,[0,1],[-200,200])
   return (
     <section>
       <div className="container">
@@ -104,15 +103,15 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={reference}>
       <div className="progress">
-        <h1>Featured Work</h1>
+        <h1>Featured Projects</h1>
         <motion.div
           className="progressBar"
           style={{ scaleX: scaleX }}
         ></motion.div>
       </div>
-      {items.map((item) => {
-        return <Single item={item} key={item.id} />;
-      })}
+      {items.map((item) =>( 
+         <Single item={item} key={item.id} />
+      ))}
     </div>
   );
 };

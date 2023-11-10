@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
     const textVariants={
         initial:{
-            x:-500
+            x:-300
         },
         animate:{
             x:0,
