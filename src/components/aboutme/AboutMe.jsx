@@ -4,9 +4,13 @@ import { animate, motion, useInView } from "framer-motion";
 
 const AboutMe = () => { 
 
+  const containerRef=useRef();
+
+  const isInView = useInView(containerRef);
+
   const variantsLeft = {
     initial: {
-      x: window.innerWidth<=768 ? 0 : 0,
+      x:  -300,
       opacity: 1,
     },
     animate: {
@@ -21,7 +25,7 @@ const AboutMe = () => {
 
   const variantsRight = {
     initial: {
-      x: window.innerWidth <= 768 ? 0 : -300,
+      x: -300,
       opacity: 1,
     },
     animate: {
@@ -34,21 +38,20 @@ const AboutMe = () => {
     },
   };
   
-  
-
-  
 
   return (
-    
-    <div className="container">
-      <div
+    <motion.div className="container">
+      <motion.div
         className="descWrapper"
-   
+        variants={variantsLeft}
+        ref={containerRef}
+        initial="initial"
+        animate={isInView ? "animate" : "initial"}
       >
-        <div className="nameWrapper" variants={variantsLeft}>
+        <motion.div className="nameWrapper" variants={variantsLeft}>
           <h1>Hey, everyone!</h1>
           <h2>I'm Pramuditha</h2>
-        </div>
+        </motion.div>
         <div className="description" variants={variantsLeft}>
           <p>
             "Welcome to my portfolio. I'm a passionate full stack developer with
@@ -58,17 +61,17 @@ const AboutMe = () => {
             expectations."
           </p>
         </div>
-      </div>
-      <div
+      </motion.div>
+      <motion.div
         className="techWrapper"
-        variants={variantsRight}
+        variants={variantsLeft}
         initial="initial"
-        //whileInView="animate"
+        animate={isInView ? "animate" : "initial"}
       >
-        <div
+        <motion.div
           className="languages"
-          variants={variantsRight}
-          //whileHover={{ scale: 1.1 }}
+          variants={variantsLeft}
+          whileHover={{ scale: 1.1 }}
         >
           <h1>Languages</h1>
           <ul>
@@ -78,11 +81,11 @@ const AboutMe = () => {
             <li>HTML</li>
             <li>CSS/SASS</li>
           </ul>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           className="frameworks"
           variants={variantsRight}
-         // whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.1 }}
         >
           <h1>Frameworks</h1>
           <ul>
@@ -90,11 +93,11 @@ const AboutMe = () => {
             <li>Angular</li>
             <li>Spring Boot</li>
           </ul>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           className="other"
           variants={variantsRight}
-          //whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.1 }}
         >
           <h1>Other</h1>
           <ul>
@@ -102,78 +105,9 @@ const AboutMe = () => {
             <li>PostgreSQL</li>
             <li>Git</li>
           </ul>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 export default AboutMe;
-
-{
-  /* <div
-        className="descWrapper"
-        variants={variantsLeft}
-        initial="initial"
-        whileInView="animate"
-        //animate={isInView ? "animate" : "initial"}
-      >
-        <div className="nameWrapper" variants={variantsLeft}>
-          <h1>Hey, everyone!</h1>
-          <h2>I'm Pramuditha</h2>
-        </div>
-        <div className="description" variants={variantsLeft}>
-          <p>
-            "Welcome to my portfolio. I'm a passionate full stack developer with
-            a love for turning innovative ideas into functional, beautiful, and
-            user-friendly web applications.I'm not just a coder; I'm a problem
-            solver. I thrive to create solutions that not only meet, but exceed
-            expectations."
-          </p>
-        </div>
-      </div>
-      <div
-        className="techWrapper"
-        variants={variantsRight}
-        initial="initial"
-        whileInView="animate"
-      >
-        <div
-          className="languages"
-          variants={variantsRight}
-          whileHover={{ scale: 1.1 }}
-        >
-          <h1>Languages</h1>
-          <ul>
-            <li>Java</li>
-            <li>Java Script</li>
-            <li>Type Script</li>
-            <li>HTML</li>
-            <li>CSS/SASS</li>
-          </ul>
-        </div>
-        <div
-          className="frameworks"
-          variants={variantsRight}
-          whileHover={{ scale: 1.1 }}
-        >
-          <h1>Frameworks</h1>
-          <ul>
-            <li>React</li>
-            <li>Angular</li>
-            <li>Spring Boot</li>
-          </ul>
-        </div>
-        <div
-          className="other"
-          variants={variantsRight}
-          whileHover={{ scale: 1.1 }}
-        >
-          <h1>Other</h1>
-          <ul>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-            <li>Git</li>
-          </ul>
-        </div>
-      </div> */
-}
