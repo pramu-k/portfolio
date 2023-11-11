@@ -1,6 +1,6 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import "./aboutMe.scss";
-import { animate, motion, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const AboutMe = () => { 
 
